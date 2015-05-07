@@ -17,7 +17,7 @@ OR
 
 = How to use shortcode =
 
-In detail of shortcode display in documentation.html file in plugin folder
+In detail of shortcode display in document.html file in plugin folder
 
 OR
 
