@@ -24,19 +24,10 @@ OR
 In admin dashboard menu "Sematic Sortcode" here also detail of shortcode
 
 
-
-== Screenshots ==
-
-1. This screen backend shortcode document to screenshot-1.png
-2. This screen backend editor screen to screenshot-2.png
-
-== Changelog ==
-
-= 1.0 =
-*This is first version of plugin
-
-
-== Upgrade Notice ==
-
-= 1.0 =
-This is first version of plugin
+```html
+<div class="wrap">
+	<div class="clear"></div>
+	<iframe src="document.html" style="width:100%;height:720px;"></iframe>
+	<div class="clear"></div>
+</div>
+```
