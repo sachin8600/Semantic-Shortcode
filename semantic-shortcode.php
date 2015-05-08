@@ -87,18 +87,12 @@ final class SemanticShortcode {
 	private function init_hooks() {
 		// enque js css to front end
 		add_action('wp_enqueue_scripts', array($this,'ss_style_script') );
+		//enque js css to backend end
+		add_action('admin_enqueue_scripts', array($this,'ss_admin_style_script') );
 		//add tiny editor button
 		add_action('admin_head', array($this,'ss_add_tiny_editor_button') );
 		//add menu page
 		add_action( 'admin_menu', array($this,'register_semantic_shortcode_menu_page') );
-		//add css to admin side
-		add_action('admin_enqueue_scripts', array($this,'ss_admin_style') );
-	}
-	/**
-	 * Add icon in tiny editor
-	 */
-	function ss_admin_style() {
-	    wp_enqueue_style('ss-admin',SS_CSS_URL.'ss-admin.css');
 	}
 	/**
 	 * Add menu page in admin menu
@@ -143,9 +137,19 @@ final class SemanticShortcode {
 	 */
 	function ss_style_script(){
 		wp_enqueue_style('semantic',SS_CSS_URL."semantic.min.css");
-		wp_enqueue_script('jquery',SS_JS_URL."jquery.js");
-		wp_enqueue_script('jquery-address',SS_JS_URL."jquery.address.min.js");
-		wp_enqueue_script('semantic',SS_JS_URL."semantic.min.js");
+		wp_enqueue_script('jquery-address',SS_JS_URL."jquery.address.min.js",array("jquery"));
+		wp_enqueue_script('semantic',SS_JS_URL."semantic.min.js",array("jquery","jquery-address"));
+	}
+	/**
+	 * Used to add css and js file on the admin side / back end.
+	 */
+	function ss_admin_style_script(){
+		if($_REQUEST['page'] == 'semantic-shortcode'):
+			wp_enqueue_style('semantic',SS_CSS_URL."semantic.min.css");
+			wp_enqueue_script('jquery-address',SS_JS_URL."jquery.address.min.js",array("jquery"));
+			wp_enqueue_script('semantic',SS_JS_URL."semantic.min.js",array("jquery","jquery-address"));
+		endif;
+		wp_enqueue_style('ss-admin',SS_CSS_URL.'ss-admin.css');
 	}
 
 	function ss_add_tiny_editor_button() {
@@ -154,9 +158,6 @@ final class SemanticShortcode {
 	    if ( !current_user_can('edit_posts') && !current_user_can('edit_pages') ) {
 	    return;
 	    }
-	    // verify the post type
-	    if( ! in_array( $typenow, array( 'post', 'page' ) ) )
-	        return;
 	    // check if WYSIWYG is enabled
 	    if ( get_user_option('rich_editing') == 'true') {
 	        add_filter("mce_external_plugins", array($this,"ss_add_tinymce_plugin") );

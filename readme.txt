@@ -36,11 +36,7 @@ This section describes how to install the plugin and get it working.
 
 = How to use shortcode =
 
-In detail of shortcode display in document.html file in plugin folder
-
-OR
-
-In admin dashboard menu "Sematic Sortcode" here also detail of shortcode
+In admin dashboard menu as "Sematic Sortcode" here also details of shortcodes
 
 
 
