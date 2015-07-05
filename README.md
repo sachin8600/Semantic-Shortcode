@@ -53,7 +53,7 @@
 
 ### * Reveal
 
-         **1. You can add lots of reveal animation.**
+         1. You can add lots of reveal animation.
 
 ### * Grid
 
