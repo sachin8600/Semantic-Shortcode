@@ -5,45 +5,45 @@
 
 ### * Button
 
-         **1. You can add customize button with size, color, text, link.**
+         1. You can add customize button with size, color, text, link.
 
-         **2. You can add animation to button.**
+         2. You can add animation to button.
 
 ### * Divider
 
-         **1. You can add horizontal as well as vertical divider.**
+         1. You can add horizontal as well as vertical divider.
 
-         **2. You can add text between divider.**
+         2. You can add text between divider.
 
 ### * Flag
 
-         **1. You can add short-code for flag.** 
+         1. You can add short-code for flag. 
 
 ### * Header
 
-         **1. You can add short-code for header.** 
+         1. You can add short-code for header. 
 
 ### * Icon
 
-         **1. You can add lots of semantic icons.**
+         1. You can add lots of semantic icons.
 
 ### * Image
 
-         **1. You can add images with lots of frame.**
+         1. You can add images with lots of frame.
 
-         **2. You can add animation to images.**
+         2. You can add animation to images.
 
 ### * Input
 
-         ***1. You can add input fields with icon.**
+         1. You can add input fields with icon.
 
-         ***2. You can adjust icon placement.**
+         2. You can adjust icon placement.
 
 ### * Label
 
-         **1. You can add label with lots of animation.**
+         1. You can add label with lots of animation.
 
-         **2. You can add icon or images with label.**
+         2. You can add icon or images with label.
 
 ### * List
 
@@ -57,27 +57,27 @@
 
 ### * Grid
 
-        **1. You can add grid layout.**
+        1. You can add grid layout.
 
-        **2. You can create structure of site using grid short-code.**
+        2. You can create structure of site using grid short-code.
 
 ### * Message
 
-        **1. You can add message layout like error message.**
+        **1. You can add message layout like error message.
 
 ### * Accordion
 
-        **1. You can add accordion.** 
+        1. You can add accordion.
 
 ### * Tab
 
-        **1. You can add nested short-code.**
+        1. You can add nested short-code.
 
 ### * Transition
 
-        **1. You can add lots of transition effect.**
+        1. You can add lots of transition effect.
 
-> **== Installation ==**
+> == Installation ==
 
 ### This section describes how to install the plugin and get it working.
 
