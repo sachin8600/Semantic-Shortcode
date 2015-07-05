@@ -47,9 +47,9 @@
 
 ### * List
 
-         1. You can add listing with lots of customization
+         1. You can add listing with lots of customization.
 
-         2. You can add animation to listing
+         2. You can add animation to listing.
 
 ### * Reveal
 
